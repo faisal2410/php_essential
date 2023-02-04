@@ -7,11 +7,11 @@
   </head>
   <body>
     
-    <?php $assoc = array("first_name" => "Kevin", "last_name" => "Skoglund"); ?>
+    <?php $assoc = array("first_name" => "Faisal", "last_name" => "Ahmed"); ?>
     <?php echo $assoc["first_name"]; ?><br />
     <?php echo $assoc["first_name"] . " " . $assoc["last_name"]; ?><br />
 
-    <?php $assoc["first_name"] = "Larry"; ?>
+    <?php $assoc["first_name"] = "Mashrufa"; ?>
     <?php echo $assoc["first_name"] . " " . $assoc["last_name"]; ?><br />
 
     <?php // echo $assoc[0]; ?><br />

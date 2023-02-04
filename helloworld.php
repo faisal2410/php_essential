@@ -17,5 +17,7 @@
     <?php echo "Hello World!"; ?><br />
     <?php echo "Hello" . " World!"; ?><br />
     <?php echo 2 + 3; ?>
+    <br/>
+    <?php phpinfo();?>
   </body>
 </html>

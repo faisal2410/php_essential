@@ -26,6 +26,8 @@
     
     <pre>
     <?php echo print_r($mixed); ?>
+    <hr>
+    <?php  print_r($mixed); ?>
     </pre>
     
     <?php 
