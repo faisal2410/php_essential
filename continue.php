@@ -1,46 +1,48 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Continue</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continue</title>
+</head>
+<body>
 
-    <?php
-      for ($count=0; $count <= 10; $count++) {
-        if ($count % 2 == 0) { continue; }
-        echo $count . ", ";
-      }
-    ?>
-    
-    <?php // what's wrong with this?
+<?php
+  for ($count=0; $count <= 10; $count++) {
+    if ($count % 2 == 0) { continue; }
+    echo $count . ", ";
+  }
+?>
 
-      $count = 0;
-      while ($count <= 10) {
-        if ($count == 5) {
-          $count++;
-          continue;
-        }
-        echo $count . ", ";
-        $count++;
-      }
+<?php // what's wrong with this?
 
-    ?>
-    
-    <br />
-    <?php // loop inside a loop with continue
+  $count = 0;
+  while ($count <= 10) {
+    if ($count == 5) {
+      $count++;
+      continue;
+    }
+    echo $count . ", ";
+    $count++;
+  }
 
-      for ($i=0; $i<=5; $i++) {
-        if ($i % 2 == 0) { continue(1); }
-        for ($k=0; $k<=5; $k++) {
-          if ($k == 3) { continue(2); }
-          echo $i . "-" . $k . "<br />";
-        }
-      }
+?>
 
-    ?>
-    
+<br />
+<?php // loop inside a loop with continue
 
-  </body>
+  for ($i=0; $i<=5; $i++) {
+    if ($i % 2 == 0) { continue(1); }
+    for ($k=0; $k<=5; $k++) {
+      if ($k == 3) { continue(2); }
+      echo $i . "-" . $k . "<br />";
+    }
+  }
+
+?>
+
+
+</body>
 </html>
+
